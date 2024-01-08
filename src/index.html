@@ -9,5 +9,12 @@
 </head>
 <body>
   <app-root></app-root>
+  <app-attributes-examples></app-attributes-examples>
+  <p appHighlight [highlightColor]="'lightblue'">Hover over me</p>
+  <app-dropdown
+  [options]="dropdownOptions"
+  [selectedValue]="selectedDropdownValue"
+  (selectedValueChanged)="onDropdownSelectionChange($event)">
+</app-dropdown>
 </body>
 </html>
